@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+       // backgroundColor: Colors.blue,
         title: Text("Hi from appbar"),
       ),
       body: Center(
