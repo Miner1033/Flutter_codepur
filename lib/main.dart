@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_codepur_project/home_page.dart';
 
 void main()
 {
@@ -11,15 +12,10 @@ class  Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     int hour=8;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome 8 hour of flutter by Rimon"),
-          ),
-        ),
-      ),
+      home:HomePage(),
     );
   }
 }
