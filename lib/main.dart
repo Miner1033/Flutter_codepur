@@ -1,6 +1,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_codepur_project/pages/login_page.dart';
+
+import 'home_page.dart';
 
 void main()
 {
@@ -13,13 +16,15 @@ class  Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome 8 hour of flutter by Rimon"),
-          ),
-        ),
-      ),
+
+
+
+      initialRoute: "/home",
+      routes: {
+        "/":(context)=>LoginPage(),
+        "/home":(context)=>HomePage(),
+        "/login":(context)=>LoginPage(),
+      },
     );
   }
 }
