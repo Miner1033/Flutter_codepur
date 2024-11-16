@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_codepur_project/pages/login_page.dart';
 import 'package:flutter_codepur_project/utils/routes.dart';
+import 'package:flutter_codepur_project/widgets/themes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 
@@ -17,10 +18,7 @@ class  Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily:GoogleFonts.lato().fontFamily,
-       primaryTextTheme: GoogleFonts.latoTextTheme(),
-      ),
+      theme:MyTheme.lightTheme(context),
       initialRoute: "/login",
       routes: {
         "/":(context)=>LoginPage(),
