@@ -12,7 +12,8 @@ class HomePage extends StatelessWidget {
 
       drawer: MyDrawer(),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+
+       // backgroundColor: Colors.blue,
         title: Text("Hi from appbar"),
       ),
       body: Center(
