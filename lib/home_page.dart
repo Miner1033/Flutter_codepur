@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codepur_project/widgets/drawer.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -9,9 +10,7 @@ class HomePage extends StatelessWidget {
     int hour=8;
     return Scaffold(
 
-      drawer: Drawer(
-        backgroundColor: Colors.white,
-      ),
+      drawer: MyDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text("Hi from appbar"),
